@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bibliothek</string>
+    <string name="medien_titel">Bibliothek - Medien</string>
+    <string name="suche_hint">Titel oder Autor suchen...</string>
+    <string name="btn_suchen">Suchen</string>
+    <string name="btn_neu">+</string>
+    <string name="btn_menu">☰</string>
+    <string name="btn_refresh">Aktualisieren</string>
+
+    <!-- Tabellen-Header -->
+    <string name="header_id">ID</string>
+    <string name="header_titel">Titel</string>
+    <string name="header_autor">Autor</string>
+    <string name="header_genre">Genre</string>
+
+    <!-- Medium Detail Activity -->
+    <string name="medium_bearbeiten">Medium bearbeiten</string>
+    <string name="medium_erstellen">Neues Medium erstellen</string>
+    <string name="btn_speichern">Speichern</string>
+    <string name="btn_abbrechen">Abbrechen</string>
+    <string name="btn_loeschen">Medium löschen</string>
+
+    <!-- Formular-Labels -->
+    <string name="label_titel">Titel *</string>
+    <string name="label_autor">Autor *</string>
+    <string name="label_genre">Genre</string>
+    <string name="label_altersfreigabe">Altersfreigabe</string>
+    <string name="label_ean">EAN</string>
+    <string name="label_standort">Standort</string>
+    <string name="pflichtfelder">* Pflichtfelder</string>
+
+    <!-- Hints -->
+    <string name="hint_titel">Titel des Mediums</string>
+    <string name="hint_autor">Autor des Mediums</string>
+    <string name="hint_genre">z.B. Roman, Krimi, Sachbuch</string>
+    <string name="hint_altersfreigabe">z.B. 16, 18</string>
+    <string name="hint_ean">EAN-Code</string>
+    <string name="hint_standort">Regal-Bezeichnung</string>
+
+    <!-- Toast-Nachrichten -->
+    <string name="toast_aktualisierung">Daten werden aktualisiert...</string>
+    <string name="toast_suche">Suche nach: %1$s</string>
+    <string name="toast_menu">Menü (noch nicht implementiert)</string>
+
+    <!-- Erfolgs-Nachrichten -->
+    <string name="success_erstellt">Medium erfolgreich erstellt!</string>
+    <string name="success_bearbeitet">Medium erfolgreich bearbeitet!</string>
+    <string name="success_geloescht">Medium erfolgreich gelöscht!</string>
+
+    <!-- Fehler-Nachrichten -->
+    <string name="error_titel_pflicht">Titel ist Pflicht!</string>
+    <string name="error_autor_pflicht">Autor ist Pflicht!</string>
+    <string name="error_altersfreigabe_zahl">Altersfreigabe muss eine Zahl sein!</string>
+    <string name="error_verbindung">Verbindungsfehler zum Server</string>
+    <string name="error_keine_daten">Keine Medien gefunden</string>
+
+    <!-- Dialog-Nachrichten -->
+    <string name="dialog_loeschen_titel">Medium löschen</string>
+    <string name="dialog_loeschen_text">Möchten Sie dieses Medium wirklich löschen?</string>
+    <string name="dialog_loeschen_ok">Löschen</string>
+    <string name="dialog_loeschen_cancel">Abbrechen</string>
+</resources>

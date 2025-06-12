@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".activities.MediumDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <TextView
+            android:id="@+id/tvTitel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Medium bearbeiten"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"
+            android:gravity="center" />
+
+        <!-- Titel (Pflichtfeld) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Titel *"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/etTitel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Titel des Mediums"
+            android:inputType="text"
+            android:layout_marginBottom="16dp"
+            android:minHeight="48dp" />
+
+        <!-- Autor (Pflichtfeld) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Autor *"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/etAutor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Autor des Mediums"
+            android:inputType="text"
+            android:layout_marginBottom="16dp"
+            android:minHeight="48dp" />
+
+        <!-- Genre (optional) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Genre"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/etGenre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="z.B. Roman, Krimi, Sachbuch"
+            android:inputType="text"
+            android:layout_marginBottom="16dp"
+            android:minHeight="48dp" />
+
+        <!-- Altersfreigabe (optional) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Altersfreigabe"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/etAltersfreigabe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="z.B. 16, 18"
+            android:inputType="number"
+            android:layout_marginBottom="16dp"
+            android:minHeight="48dp" />
+
+        <!-- EAN (optional) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EAN"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/etEan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="EAN-Code"
+            android:inputType="text"
+            android:layout_marginBottom="16dp"
+            android:minHeight="48dp" />
+
+        <!-- Standort (optional) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Standort"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/etStandort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Regal-Bezeichnung"
+            android:inputType="text"
+            android:layout_marginBottom="32dp"
+            android:minHeight="48dp" />
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnAbbrechen"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Abbrechen"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnSpeichern"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Speichern"
+                android:layout_marginStart="8dp" />
+
+        </LinearLayout>
+
+        <!-- Löschen-Button (nur im Bearbeiten-Modus sichtbar) -->
+        <Button
+            android:id="@+id/btnLoeschen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Medium löschen"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/design_default_color_error"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <!-- Hinweis -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="* Pflichtfelder"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            android:layout_marginTop="16dp"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+</ScrollView>
